@@ -1,0 +1,102 @@
+#include<graphics.h>
+void lpeople()
+{
+	int i,xab,xabc;
+	char *s;
+	setcolor(6);
+	setfillstyle(1,10);
+        rectangle(92,133,178,148);
+        floodfill(93,134,6);
+	rectangle(92,160,178,175);
+	floodfill(93,161,6);
+	rectangle(92,219,178,234);
+	floodfill(93,220,6);
+	for(i=0,xab=96,xabc=96;i<10;i++)
+	{
+             if(i<5)
+		{
+                rectangle(xab,182,xab+16,194);
+		floodfill(xab+1,183,6);
+		sprintf(s,"%d",i+1);
+		outtextxy(xab+4,185,s);
+		xab+=16;
+                }
+	     if(i>=5)
+	     {
+                rectangle(xabc,197,xabc+16,209);
+	        floodfill(xabc+1,198,6);
+		sprintf(s,"%d",i+1);
+		outtextxy(xabc+4,200,s);
+		xabc+=16;
+             }
+	}
+		for(i=0,xab=96,xabc=96;i<10;i++)
+	{
+		if(i<5)
+		{
+                  rectangle(xab,241,xab+16,253);
+		  floodfill(xab+1,242,6);
+		  sprintf(s,"%d",i+1);
+		  outtextxy(xab+4,243,s);
+		  xab+=16;
+                }
+	        if(i>=5)
+		{
+                  rectangle(xabc,256,xabc+16,268);
+		  floodfill(xabc+1,257,6);
+		  sprintf(s,"%d",i+1);
+		  outtextxy(xabc+4,258,s);
+		  xabc+=16;
+                }
+	}
+}
+void rpeople()
+{
+	int i,xab,xabc;
+	char *s;
+	setcolor(6);
+        rectangle(438,133,526,148);
+        floodfill(439,134,6);
+	rectangle(438,160,526,175);
+        floodfill(439,161,6);
+	rectangle(438,219,526,234);
+        floodfill(439,220,6);
+	for(i=0,xab=440,xabc=440;i<10;i++)
+	{
+		if(i<5)
+	{
+		rectangle(xab,182,xab+16,194);
+                floodfill(xab+1,183,6);
+		sprintf(s,"%d",i+1);
+		outtextxy(xab+4,185,s);
+		xab+=16;
+	}
+	if(i>=5)
+	{
+		rectangle(xabc,197,xabc+16,209);
+                floodfill(xabc+1,198,6);
+		sprintf(s,"%d",i+1);
+		outtextxy(xabc+4,200,s);
+		xabc+=16;
+	}
+       } 
+      for(i=0,xab=440,xabc=440;i<10;i++)
+	{
+         if(i<5)
+		{
+                 rectangle(xab,241,xab+16,253);
+                 floodfill(xab+1,242,6);
+		 sprintf(s,"%d",i+1);
+		 outtextxy(xab+4,243,s);
+		 xab+=16;
+                }
+	if(i>=5)
+		{
+                 rectangle(xabc,256,xabc+16,268);
+                 floodfill(xabc+1,257,6);
+		 sprintf(s,"%d",i+1);
+		 outtextxy(xabc+4,258,s);
+		 xabc+=16;
+                }
+	}
+}
